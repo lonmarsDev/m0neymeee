@@ -1,0 +1,32 @@
+version: '3.1'
+
+services:
+  db:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: root
+    ports:
+     - 5432:5432
+
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8020:8080
+
+  moneyme-api:
+    build:
+      context: .
+    environment:
+      - DB_HOSTNAME=db:5432
+    ports:
+      - 8100:8100
+    depends_on:
+      - db
+
+  webapp:
+    build:
+      context: ./webapp
+    ports:
+      - 3000:3000 

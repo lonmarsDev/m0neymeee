@@ -1,0 +1,38 @@
+{
+  "name": "material-cra",
+  "version": "5.0.0",
+  "private": true,
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@mui/lab": "^5.0.0-alpha.136",
+    "@mui/material": "^5.14.0",
+    "@mui/styled-engine-sc": "^5.12.0",
+    "@mui/x-date-pickers": "^6.9.2",
+    "axios": "^1.4.0",
+    "dayjs": "^1.11.9",
+    "react": "latest",
+    "react-dom": "latest",
+    "react-router-dom": "^6.13.0",
+    "react-scripts": "latest",
+    "styled-components": "^5.3.11"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
